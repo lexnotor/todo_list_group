@@ -1,21 +1,21 @@
-import React, {useRef} from 'react'
+import React, {useState} from 'react'
 
 const Footer = () => {
 
-  const inputEl = useRef(null);
-  const onButtonClick = () => {
-    if(inputEl.current.value.trim()){
-      return;
-    } else {
-      console.log(inputEl.current.value);
+  const [inputEl, setInputEl] = useState("");
+  console.log(inputEl);
+
+  const validate = () =>{
+    if (inputEl === ""){
+      inputEl = inputEl.trim();
     }
-  };
+  }
 
   return (
     <div>
       <form onSubmit={e => {e.preventDefault()}}>
-        <input ref={inputEl} type="text" />
-        <button onClick={onButtonClick}>+</button>
+        <input type="text" onChange={(e) => setInputEl(e.target.value)}/>
+        <input type="Submit" value="+" onClick={validate()}></input>
       </form>
     </div>
   )
