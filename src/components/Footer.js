@@ -6,9 +6,8 @@ const Footer = () => {
   console.log(inputEl);
 
   const validate = () =>{
-    if (inputEl === ""){
-      inputEl = inputEl.trim();
-    }
+    if (inputEl.trim() === "") return;
+    setInputEl(""); 
   }
 
   return (
