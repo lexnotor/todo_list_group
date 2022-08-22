@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from "react";
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Task from './components/Task';
 
 function App() {
   const [input, setInput] = useState();
@@ -22,10 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <ul>
-
-      </ul>
+      
       <Footer />
 
       
