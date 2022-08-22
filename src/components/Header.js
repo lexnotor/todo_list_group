@@ -7,7 +7,7 @@ const Header = ({ checkAll, deleteAll }) => {
     <div className='header'>
       <h3>
         <FaTasks /> 
-        Mon todo list
+        La todo list
       </h3>
 
       <div className='actions'>
