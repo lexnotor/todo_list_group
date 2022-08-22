@@ -1,6 +1,8 @@
-
+import './App.css';
 import React, { useState } from "react";
-import "./App.css";
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Task from './components/Task';
 
 function App() {
 
@@ -39,10 +41,23 @@ function App() {
       setTasks(newTask);
     }
   return (
-      <div className="App">
-        
-      </div>
-   )
+    <div className="App">
+
+      <Header checkAll={''} deleteAll ={removeAllTask}/>
+     
+        <ul>
+        {
+          tasks.map((task) =>(<Task tkey={task.id} titre={task.title} del={removeTask}/>))
+        }
+        </ul>
+
+        <Footer />
+      
+      
+      <Footer />
+      
+    </div>
+  );
 }
 
 export default App;
