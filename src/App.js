@@ -29,9 +29,19 @@ function App() {
 
   return (
     <div className="App">
+
+      <Header checkAll={''} deleteAll ={removeAllTask}/>
+     
+        <ul>
+        {
+          tasks.map((task) =>(<Task tkey={task.id} titre={task.title} del={removeTask}/>))
+        }
+        </ul>
+
+        <Footer />
+      
       
       <Footer />
-
       
     </div>
   );
