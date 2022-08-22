@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Task from './components/Task';
 
 function App() {
+
   const [tasks, setTasks] = useState([]);
 
   //Fonction Add un task
@@ -27,6 +28,18 @@ function App() {
 
   //Fonction checked
 
+  const updateTask = (task_id, newTitle) => {
+      
+      if (!tasks.text || /^\s*$/.test(tasks.text)) {
+        return;
+      }
+
+      const newTask = tasks.map((element) => {
+        if(element.id === task_id) element.title = newTitle;
+        return element;
+      })
+      setTasks(newTask);
+    }
   return (
     <div className="App">
 
