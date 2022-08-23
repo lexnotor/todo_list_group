@@ -11,19 +11,11 @@ const Header = ({ checkAll, deleteAll }) => {
           <FaTasks />
         </h3>
       </div>
-      <div>
-        La todo list
-      </div>
+      <div><span>La todo list</span></div>
       <div className='actions'>
-        <span onClick={() => checkAll()}>
-          <FaRegCheckSquare />
-        </span>
-        <span onClick={() => deleteAll()}>
-          <FaTrashAlt />
-        </span>
-
+        <span onClick={() => checkAll()}><FaRegCheckSquare /></span>
+        <span onClick={() => deleteAll()}><FaTrashAlt /></span>
       </div>
-
     </div>
   )
 }

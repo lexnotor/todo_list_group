@@ -32,3 +32,12 @@
     display: flex;
     gap: 13px;
 }
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 20px;
+    padding: 18px;
+    border-radius: 4px;
+}
