@@ -52,7 +52,7 @@ function App() {
 
       <Header checkAll={checkAllTask} deleteAll ={removeAllTask}/>
      
-        <ul>
+        <ul className='tasks'>
         {
           tasks.map((task) => (<Task task={task} check={checkTask} del={removeTask} update={updateTask} key={task.id}/> ))
         }
