@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
+import '../App.css';
 import { FaTrashAlt, FaRegCheckSquare, FaEdit } from 'react-icons/fa'
-
 
 const Task = (props) => {
 
@@ -40,6 +40,7 @@ const Task = (props) => {
                             value={updatedText}
                             onBlur={() => changeEditable(false)}
                             onChange={ changeUpdate}
+                            autoFocus={true}
                         />
                         <button>Valider</button>
                     </div>

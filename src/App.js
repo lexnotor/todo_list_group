@@ -24,7 +24,7 @@ function App() {
 
   //Fonction delete all
   const removeAllTask = () => {
-    setTasks(tasks.filter((task) => task.check !== false));
+    setTasks(tasks.filter((task) => !task.check));
   };
 
   //Fonction checked
