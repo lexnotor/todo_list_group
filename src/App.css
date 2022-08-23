@@ -17,3 +17,18 @@
     min-height: 95vh;
     border-radius: 10px;
 }
+
+.header {
+    background-color: #c1c1c1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(179, 177, 177);
+    border-radius: 3px;
+}
+
+.actions {
+    display: flex;
+    gap: 13px;
+}
