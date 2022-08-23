@@ -1,0 +1,19 @@
+@media screen and (max-width: 800px) {
+    .App {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .App {
+        width: 500px;
+    }
+}
+
+.App {
+    background-color: rgb(211, 211, 211, 60%);
+    margin-top: 20px;
+    padding: 25px 15px;
+    min-height: 95vh;
+    border-radius: 10px;
+}
