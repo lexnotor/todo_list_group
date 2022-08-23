@@ -34,15 +34,16 @@ const Task = (props) => {
                 // Selon qu'on est entrain de l'editer ou pas, nous afficherons
                 // soit une balise <input/> ou une balise <h4>
                 isEdited ?
-                    <div>
+                    <div style={{display: 'flex', alignItems: 'center'}}>
                         <input
                             type="text"
                             value={updatedText}
                             onBlur={() => changeEditable(false)}
                             onChange={ changeUpdate}
                             autoFocus={true}
+                            className="editInput"
                         />
-                        <button>Valider</button>
+                        <button className='valider'>Valider</button>
                     </div>
                     :
                     <h4
