@@ -11,7 +11,7 @@
 }
 
 .App {
-    background-color: rgb(211, 211, 211, 60%);
+    background-color: rgb(211, 211, 211, 90%);
     margin: 10px 0;
     padding: 25px 15px;
     /* min-height: 90vh; */
@@ -39,7 +39,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    margin: 20px;
+    margin: 15px 20px;
     padding: 18px;
     border-radius: 4px;
 }
@@ -57,13 +57,39 @@
     height: 42px;
     width: 100%;
     outline: none;
-    border: 1px solid rgb(206, 204, 204);
+    border: 1px solid rgb(173, 171, 171);
+    border-radius: 22px;
+    padding-left: 16px;
+    padding-right: 50px;
+    font-size: 20px;
 }
 
 .submit {
     position: absolute;
-    right: 10px;
-    top: 15px;
+    right: 8px;
+    top: 7px;
     border: none;
     cursor: pointer;
+    font-size: 30px;
+    color: rgb(80, 79, 79);
+    background: transparent;
+}
+
+.delete {
+    color: rgba(255, 0, 0, 0.589);
+    cursor: pointer;
+}
+
+.edit {
+    color: rgba(5, 141, 151, 0.623);
+    cursor: pointer;
+}
+
+.check {
+    color: #0AE820;
+    cursor: pointer;
+}
+
+.barre {
+    text-decoration: line-through;
 }
