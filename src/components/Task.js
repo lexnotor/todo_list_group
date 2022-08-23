@@ -18,12 +18,12 @@ const Task = (props) => {
         b && setUpdatedText(titre);
         // Quand on termine l'edition, nous verifions que le texte saisi n'est pas
         // vide avant d'executer la fonction update de App.js
-        !b && updatedText.trim().length() && update(tkey, updatedText.trim())
+        !b && updatedText.trim().length && update(tkey, updatedText.trim())
         setIsEdited(b);
     }
 
     const changeUpdate = (e) => {
-        const texte = e.target.value;
+        const texte = e.target.value + '';
         setUpdatedText(texte)
     }
 
