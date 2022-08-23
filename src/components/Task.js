@@ -40,6 +40,7 @@ const Task = (props) => {
                             value={updatedText}
                             onBlur={() => changeEditable(false)}
                             onChange={ changeUpdate}
+                            autoFocus={true}
                         />
                         <button>Valider</button>
                     </div>
