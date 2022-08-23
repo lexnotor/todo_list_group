@@ -1,20 +1,20 @@
 import React, {useState} from 'react'
 
-const Footer = () => {
+const Footer = ( {addTask}) => {
 
   const [inputEl, setInputEl] = useState("");
-  console.log(inputEl);
 
   const validate = () =>{
     if (inputEl.trim() === "") return;
+    addTask(inputEl);
     setInputEl(""); 
   }
 
   return (
     <div>
       <form onSubmit={e => {e.preventDefault()}}>
-        <input type="text" onChange={(e) => setInputEl(e.target.value)}/>
-        <input type="Submit" value="+" onClick={validate()}></input>
+        <input type="text" onChange={(e) => setInputEl(e.target.value)} value={inputEl} />
+        <button type="submit" onClick={()=>validate()}>+</button>
       </form>
     </div>
   )
