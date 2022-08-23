@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
+import '../App.css';
 import { FaTrashAlt, FaRegCheckSquare, FaEdit } from 'react-icons/fa'
-
 
 const Task = (props) => {
 
