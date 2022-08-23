@@ -6,15 +6,16 @@
 
 @media screen and (min-width: 800px) {
     .App {
-        width: 500px;
+        width: 400px;
     }
 }
 
 .App {
     background-color: rgb(211, 211, 211, 60%);
-    margin-top: 20px;
+    margin: 10px 0;
     padding: 25px 15px;
-    min-height: 95vh;
+    /* min-height: 90vh; */
+    max-height: 96vh;
     border-radius: 10px;
 }
 
@@ -36,8 +37,33 @@
 .list-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #fff;
     margin: 20px;
     padding: 18px;
     border-radius: 4px;
+}
+
+.tasks {
+    overflow-y: auto;
+    height: 75vh;
+}
+
+.footer {
+    margin: 10px 0;
+}
+
+.input {
+    height: 42px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(206, 204, 204);
+}
+
+.submit {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    border: none;
+    cursor: pointer;
 }
