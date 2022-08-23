@@ -65,7 +65,7 @@ const Task = (props) => {
                 {/* Notre Bouton supprimer */}
                 <span
                     onClick={() => del(tkey)}
-                    className={'del'}
+                    className={'delete'}
                 >
                     <FaTrashAlt />
                 </span>
