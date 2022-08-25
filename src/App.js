@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Task from './components/Task';
@@ -8,6 +8,26 @@ import { initial } from './components/initialTasks';
 function App() {
 
   const [tasks, setTasks] = useState(initial);
+  const [isMounted, setIsMounted] = useState( false );
+
+  useEffect( () => {
+    setIsMounted(true)
+    if(localStorage.getItem('tasks')) {
+      const local_task = JSON.parse(localStorage.getItem('tasks'));
+      setTasks( local_task );
+    } else {
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+    return () => {
+      localStorage.setItem('tasks', JSON.stringify( tasks ));
+    }
+  }, [])
+
+  useEffect( () => {
+    if(isMounted) {
+      localStorage.setItem('tasks', JSON.stringify( tasks ))
+    }
+  }, [tasks, isMounted]);
 
   //Fonction Add un task
   const addTask = (tache) => {
