@@ -1,0 +1,120 @@
+@media screen and (max-width: 800px) {
+    .App {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .App {
+        width: 400px;
+    }
+}
+
+.App {
+    background-color: rgb(211, 211, 211, 90%);
+    margin: 10px 0;
+    padding: 25px 15px;
+    /* min-height: 90vh; */
+    max-height: 96vh;
+    border-radius: 10px;
+}
+
+.header {
+    background-color: #c1c1c1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(179, 177, 177);
+    border-radius: 3px;
+}
+
+.actions {
+    display: flex;
+    gap: 13px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin: 15px 20px;
+    padding: 18px;
+    border-radius: 4px;
+}
+
+
+
+.tasks {
+    overflow-y: auto;
+    height: 75vh;
+}
+
+.footer {
+    margin: 10px 0;
+}
+
+.input {
+    height: 42px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(173, 171, 171);
+    border-radius: 22px;
+    padding-left: 16px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.submit {
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(80, 79, 79);
+    background: transparent;
+}
+
+.delete {
+    color: rgba(255, 0, 0, 0.589);
+    cursor: pointer;
+}
+
+.edit {
+    color: rgba(5, 141, 151, 0.623);
+    cursor: pointer;
+}
+
+.check {
+    color: #0AE820;
+    cursor: pointer;
+}
+
+.barre {
+    text-decoration: line-through;
+}
+
+.editInput {
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    height: 30px;
+    padding-left: 5px;
+}
+
+.valider {
+    border: green;
+    height: 30px;
+    padding: 9px;
+    background-color: green;
+    color: #fff;
+    margin-left: -5px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.valider:hover {
+    background-color: rgb(8, 90, 8);
+}
